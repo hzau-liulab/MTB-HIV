@@ -46,11 +46,11 @@ GSM728541	HMI
 Go to ./DEA/bin directory, you will see a run.pl script, and run the following command.
 
     perl run.pl -expr input_expression_file -sample input_sampleInformation_file -ppi input_ppi_file -disease input_disease_state -out /the/directory/of/output/
-    -expr 		the path of expression matrix, such as ../examples/expression.txt
-    -sample		the path of sampleInformation
-    -ppi 			the path of protein-protein interations
-	  -disease	the disease state(HMI/MMI/MHCI)
-    -out			the path of results
+    -expr 	the path of expression matrix, such as ../examples/expression.txt
+    -sample	the path of sampleInformation
+    -ppi 	the path of protein-protein interations
+    -disease	the disease state(HMI/MMI/MHCI)
+    -out	the path of results
     
     For example:
     perl run.pl -expr ../examples/input/GSE29429_expression.txt -sample ../examples/input/GSE29429_sampleInfor.txt -ppi ../examples/input/PPI.txt -disease HMI -out ../examples/output/
