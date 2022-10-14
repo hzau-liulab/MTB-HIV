@@ -109,7 +109,7 @@ Each line includes the proteins with similar degree measures.
 387509	28423	54209	27170	85479	442523  
 
 PPI.pkl  
-This file is a dictionary that contains the shortest path length of any two nodes in a PPI network. Because the size of this file is very huge, it cannot be uploaded to GitHub. You could download this file at http://liulab.hzau.edu.cn/.
+This file is a dictionary that contains the shortest path length of any two nodes in a PPI network. Because the size of this file is very huge, it cannot be uploaded to GitHub. You could download this file at http://http://liulab.hzau.edu.cn/tmp.html.
 
 drug_data.txt  
 The first column is the drug ID, and the following columns are their corresponding targets.  
