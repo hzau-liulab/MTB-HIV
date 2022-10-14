@@ -18,6 +18,7 @@ The format of the input file is as follows. You can also check the files in the 
 GSE29429_expression.txt
 
 The first column includes the Entrz IDs of genes and the first row includes the sample IDs.
+
 ID_REF	GSM728539	GSM728540	GSM728541	GSM728542	GSM728543
 1915	  13.19218646	13.27446406	12.9607839	13.01710244	12.95647599
 2597	  11.14440333	11.5689425	10.99561171	11.42964211	11.28005156
@@ -28,6 +29,7 @@ ID_REF	GSM728539	GSM728540	GSM728541	GSM728542	GSM728543
 PPI.txt
 
 The first and second columns are Entrz IDs.
+
 5701	5710
 9343	23016
 3064	26036
@@ -37,6 +39,7 @@ The first and second columns are Entrz IDs.
 GSE29429_sampleInfor.txt
 
 The first column includes the sample IDs, and the second column means the disease status.
+
 GSM728545	HC
 GSM728547	HC
 GSM728548	HC
@@ -68,6 +71,7 @@ The first file provides the logFC, P.Value, etc. in different conditions.
 The second file provides non-differential interactions.
 
 Output examples for the first file
+
 ID_REF	logFC	AveExpr	t	P.Value	adj.P.Val	B
 9381	  6.25710165951176	4.71547828087234	11.6816199397735	2.40606495322115e-15	7.3384981073245e-11	24.3819451512404
 164668	3.64056368982549	4.2102917502766	9.62018351259993	1.41090770704937e-12	2.15163425325028e-08	18.3785723457298
@@ -94,6 +98,7 @@ The second and third files provide the PCC value in different conditions.
 The fourth file provides differential interactions.
 
 Output examples for the second file
+
 Id	V1
 1	0.682577111307779
 10	-0.106767135104595
@@ -102,6 +107,7 @@ Id	V1
 10000	0.162843540004409
 
 Other resources 
+
 The normalized expression matrix used in this study are stored in the data directory.
 
 
@@ -111,22 +117,29 @@ Input file
 The format of the input file is as follows. You can also check the files in the ./examples/input directory. 
 
 degree-bin100.txt
+
 Each line includes the proteins with similar degree measures.
+
 1	4565	100463486	285382	221914	26290
 76	114112	6076	399473	83259	399726	
 387509	28423	54209	27170	85479	442523
 
 PPI.pkl
+
 This file is a dictionary that contains the shortest path length of any two nodes in a PPI network.
 
 drug_data.txt
+
 The first column is the drug ID, and the following columns are their corresponding targets.
+
 DB00001		2147	
 DB00002		712	713	714	1956	2209	2212	2214	2215	
 DB00004		3559	3560	3561
 
-HMI_pair.txt, 
+HMI_pair.txt 
+
 The first and second columns are the Entrz IDs of HIV-associated gene pairs.
+
 3185	55850
 7322	9921
 1072	5052
@@ -146,20 +159,24 @@ Go to ./proximity/bin directory, you will see a proximity.py script and run the 
     Python 	proximity.py ../examples/input/PPI.pkl ../examples/input/drug_data.txt ../examples/input/HMI_pair.txt ../examples/input/degree-bin100.txt ../examples/output/HMI
 
 Results
+
 You will obtain four output files in the directory /the/directory/of/output/, such as permutation.txt, proximity.txt, z_score.txt and a directory named permutation that includes 1000 random repetitions. 
 The first file provides the average value and standard deviation of each drug.
 The second file provides the three proximity values of each drug.
 The third file provides three Z-scores corresponding to the three proximity values.
 
 Output examples for the third file
+
 DB00001	1.3972046900472084	0.614549980950421	2.3265382413327567
 DB00002	-1.7558535140358775	-2.150396208830809	0.15986300844872472
 DB00004	1.481542227297944	0.6119972337012101	2.397356726968668
 DB00005	-0.4834025988688505	-1.9133976609548382	2.4905800416108033
 
 Other resources 
+
 The disease associated gene pairs used in this study are stored in the data directory.
 
 Help and Support
+
 If you have any questions or suggestions, please contact us by email:  jiangyao@webmail.hzau.edu.cn or zhangjiaxuan@webmail.hzau.edu.cn or liurong116@mail.hzau.edu.cn
 This software is free for academic use. For commercial use, please contact with the authors.
