@@ -1,11 +1,12 @@
 # MTB-HIV
 Overall description
+
 This package includes three partitions, namely the DEA, DCA, and proximity sections. The DEA section is used to generate non-differential interactions (NDIs), while the DCA section is used to generate differential interactions (DIs). The proximity section is applied to drug repurposing based on the gene pair-based distance measures.
 
 Dependencies
 	Perl ( >= 5.0 )
 	R  (>= 4.0)
-  Python ( >= 3.8 )
+  	Python ( >= 3.8 )
 
 How to run the DEA and DCA scripts?
 Input file
@@ -38,6 +39,7 @@ GSM728540	HMI
 GSM728541	HMI
 
 Run DEA
+
 Go to ./DEA/bin directory, you will see a run.pl script, and run the following command.
     perl run.pl -expr input_expression_file -sample input_sampleInformation_file -ppi input_ppi_file -disease input_disease_state -out /the/directory/of/output/
     -expr 		the path of expression matrix, such as ../examples/expression.txt
