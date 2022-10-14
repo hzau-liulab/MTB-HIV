@@ -138,9 +138,9 @@ Go to ./proximity/bin directory, you will see a proximity.py script and run the 
     Python 	proximity.py ../examples/input/PPI.pkl ../examples/input/drug_data.txt ../examples/input/HMI_pair.txt ../examples/input/degree-bin100.txt ../examples/output/HMI
 
 ### Results
-You will obtain four output files in the directory /the/directory/of/output/, such as permutation.txt, proximity.txt, z_score.txt and a directory named permutation that includes 100 random repetitions.  
-The first file provides the average value and standard deviation of each drug.  
-The second file provides the three proximity values of each drug.  
+You will obtain three output files in the directory /the/directory/of/output/, such as proximity.txt, permutation.txt, z_score.txt and a directory named permutation that includes the results of random repetitions.  
+The first file provides the three proximity values of each drug.  
+The second file provides the ave and std of random results.  
 The third file provides three Z-scores corresponding to the three proximity values.  
 
 Output examples for the third file  
