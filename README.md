@@ -17,7 +17,7 @@ The format of the input file is as follows. You can also check the files in the 
 
 GSE29429_expression.txt  
 The first column includes the Entrz IDs of genes and the first row includes the sample IDs.  
-ID_REF	  GSM728539	GSM728540	GSM728541	GSM728542	GSM728543  
+ID_REF\tGSM728539\tGSM728540	GSM728541	GSM728542	GSM728543  
 1915	  13.19218646	13.27446406	12.9607839	13.01710244	12.95647599  
 2597	  11.14440333	11.5689425	10.99561171	11.42964211	11.28005156  
 643334	  0	2.125320474	0	0	1.725043085  
