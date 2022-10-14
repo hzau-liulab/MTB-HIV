@@ -11,7 +11,8 @@ This package includes three partitions, namely the DEA, DCA, and proximity secti
 
 ## How to run the DEA and DCA scripts?
 
-Input file  
+Input file
+
 The format of the input file is as follows. You can also check the files in the ./examples/input directory. 
 
 GSE29429_expression.txt  
@@ -97,7 +98,8 @@ Id	V1
 1000	-0.0793841206750866  
 10000	0.162843540004409  
 
-Other resources   
+Other resources
+
 The normalized expression matrix used in this study are stored in the data directory.  
 
 
@@ -106,34 +108,30 @@ Input file
 
 The format of the input file is as follows. You can also check the files in the ./examples/input directory. 
 
-degree-bin100.txt
+degree-bin100.txt  
+Each line includes the proteins with similar degree measures.  
+1	4565	100463486	285382	221914	26290  
+76	114112	6076	399473	83259	399726	  
+387509	28423	54209	27170	85479	442523  
 
-Each line includes the proteins with similar degree measures.
-
-1	4565	100463486	285382	221914	26290
-76	114112	6076	399473	83259	399726	
-387509	28423	54209	27170	85479	442523
-
-PPI.pkl
-
+PPI.pkl  
 This file is a dictionary that contains the shortest path length of any two nodes in a PPI network.
 
-drug_data.txt
-
+drug_data.txt  
 The first column is the drug ID, and the following columns are their corresponding targets.
 
-DB00001		2147	
-DB00002		712	713	714	1956	2209	2212	2214	2215	
-DB00004		3559	3560	3561
+DB00001		2147  	
+DB00002		712	713	714	1956	2209	2212	2214	2215  	
+DB00004		3559	3560	3561  
 
 HMI_pair.txt 
 
 The first and second columns are the Entrz IDs of HIV-associated gene pairs.
 
-3185	55850
-7322	9921
-1072	5052
-2237	79968
+3185	55850  
+7322	9921  
+1072	5052  
+2237	79968  
 
 ## Run proximity
 Go to ./proximity/bin directory, you will see a proximity.py script and run the following command.
@@ -150,17 +148,17 @@ Go to ./proximity/bin directory, you will see a proximity.py script and run the 
 
 Results
 
-You will obtain four output files in the directory /the/directory/of/output/, such as permutation.txt, proximity.txt, z_score.txt and a directory named permutation that includes 1000 random repetitions. 
-The first file provides the average value and standard deviation of each drug.
-The second file provides the three proximity values of each drug.
-The third file provides three Z-scores corresponding to the three proximity values.
+You will obtain four output files in the directory /the/directory/of/output/, such as permutation.txt, proximity.txt, z_score.txt and a directory named permutation that includes 1000 random repetitions.  
+The first file provides the average value and standard deviation of each drug.  
+The second file provides the three proximity values of each drug.  
+The third file provides three Z-scores corresponding to the three proximity values.  
 
 Output examples for the third file
 
-DB00001	1.3972046900472084	0.614549980950421	2.3265382413327567
-DB00002	-1.7558535140358775	-2.150396208830809	0.15986300844872472
-DB00004	1.481542227297944	0.6119972337012101	2.397356726968668
-DB00005	-0.4834025988688505	-1.9133976609548382	2.4905800416108033
+DB00001	1.3972046900472084	0.614549980950421	2.3265382413327567  
+DB00002	-1.7558535140358775	-2.150396208830809	0.15986300844872472  
+DB00004	1.481542227297944	0.6119972337012101	2.397356726968668  
+DB00005	-0.4834025988688505	-1.9133976609548382	2.4905800416108033  
 
 Other resources 
 
