@@ -15,7 +15,7 @@ This package includes three partitions, namely the DEA, DCA, and proximity secti
 The format of the input file is as follows. You can also check the files in the ./examples/input directory. 
 
 GSE29429_expression.txt  
-The first column includes the Entrz IDs of genes and the first row includes the sample IDs.  
+The first column includes the Entrez IDs of genes and the first row includes the sample IDs.  
 ID_REF  GSM728539  GSM728540	GSM728541	GSM728542	GSM728543  
 1915	  13.19218646	13.27446406	12.9607839	13.01710244	12.95647599  
 2597	  11.14440333	11.5689425	10.99561171	11.42964211	11.28005156  
@@ -82,7 +82,7 @@ Go to ./DCA/bin directory, you will see a DCA.R script and run the following com
 
 ### Results
 You will obtain four output files in the directory /the/directory/of/output/, such as pairs.txt, GSE29429_disease_pcc.txt, GSE29429_HC_pcc.txt and DI.txt.   
-The first file names every gene pair.  
+The first file includes the interacting protein pairs and their IDs.  
 The second and third files provide the PCC value in different conditions.  
 The fourth file provides differential interactions.  
 
@@ -109,7 +109,7 @@ Each line includes the proteins with similar degree measures.
 387509	28423	54209	27170	85479	442523  
 
 PPI.pkl  
-This file is a dictionary that contains the shortest path length of any two nodes in a PPI network. Because the size of this file is very huge, it cannot be uploaded to GitHub. You could download this file at http://http://liulab.hzau.edu.cn/tmp.html.
+This file is a dictionary that contains the shortest path length of any two nodes in a PPI network. Because the size of this file is very huge, it cannot be uploaded to GitHub. You could download this file at http://liulab.hzau.edu.cn/tmp.html.
 
 drug_data.txt  
 The first column is the drug ID, and the following columns are their corresponding targets.  
@@ -140,7 +140,7 @@ Go to ./proximity/bin directory, you will see a proximity.py script and run the 
 ### Results
 You will obtain three output files in the directory /the/directory/of/output/, such as proximity.txt, permutation.txt, z_score.txt and a directory named permutation that includes the results of random repetitions.  
 The first file provides the three proximity values of each drug.  
-The second file provides the ave and std of random results.  
+The second file provides the average values and standard deviations of random results.  
 The third file provides three Z-scores corresponding to the three proximity values.  
 
 Output examples for the third file  
